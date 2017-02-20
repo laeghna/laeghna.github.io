@@ -1,0 +1,190 @@
+html, body {
+    margin:0;
+    padding:0;
+    min-height: 100%;
+    min-width: 100%;
+    position:relative;
+}
+
+body {
+    font-family: Ubuntu, Sans;
+    color: #AAA;
+    font-size: 0.9em;
+    background-color: #333333;
+}
+
+a {
+    text-decoration:none;
+    color: #0086B3;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+a:active {
+    color: deepskyblue;
+}
+
+h1 {
+    font-size: 200%;
+    font-family: Times, Serif;
+}
+
+h2 {
+    font-size: 120%;
+}
+
+
+h1, h2, h3 {
+    color: #00ACE6;
+    margin: 10px 0px;
+    text-shadow: rgba(0, 37, 51, 0.8) 3px 3px 0px;
+}
+
+fieldset {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #505050;
+    background-color: #333333;
+}
+
+.wrapper {
+    position:relative;
+    width:80%;
+    min-height:100%;
+    min-width:720px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.sidepaneContainer, .mainpane {
+    display: block;
+    width: 48%;
+    padding-left:1%;
+    padding-right:1%;
+    margin-left:5px;
+    margin-top:5px;
+    min-width: 500px;
+    box-shadow: 3px 3px 4px #222;
+    background-color: #444444;
+    float:left;
+}
+
+.mainpane {
+    display:inline-block;
+    height:100%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sidepaneContainer {
+    margin-top: 0px;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sidepane > div {
+    display: inline-block;
+}
+
+
+/* Sidebar */
+.sidepane {
+    position:relative;
+    text-align: center;
+}
+
+@media only screen and (min-width: 760px) {
+
+    .mainpane {
+        display:inline-block;
+
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+
+    .sidepaneContainer {
+        height:100%;
+        width: 20%;
+        min-width: 200px;
+        display:inline-block;
+        box-shadow: none;
+        padding: 0px;
+        margin: 0px;
+        background-color: transparent;
+    }
+
+    .sidepane {
+        position:fixed;
+        top: 5px;
+        max-width: 230px;
+        background-color: #424242;
+        padding-bottom: 30px;
+        padding-top:5px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 3px 3px 4px #222;
+        border-left: #333 dotted 1px;
+        text-align:center;
+        padding: 10px;
+    }
+
+}
+
+.project {
+    position:relative;
+    display:block;
+    width:100%;
+    margin-top:1%;
+    margin-bottom:1em;
+    border-top: #222 1px dotted;
+    border-bottom: #222 1px dotted;
+    padding-top:0.4em;
+    padding-bottom:0.4em;
+}
+
+.project .left {
+    position:relative;
+    display:table-cell;
+    vertical-align:top;
+    width: 33%;
+    border-right: #222 1px dotted;
+    padding-right:1%;
+}
+
+.project .left img {
+    width: 99%;
+    box-shadow: 3px 3px 3px #333;
+}
+
+.project .right {
+    position:relative;
+    display:table-cell;
+    vertical-align:top;
+    width: 63%;
+    padding-left:1%;
+}
+
+.project .linkbox {
+    margin-top:1em;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.project .linkbox .separator {
+    display: inline-block;
+    margin-left: 0.5em;
+    padding-right: 0.5em;
+    border-left: #333 1px solid;
+    height:0.8em;
+}
